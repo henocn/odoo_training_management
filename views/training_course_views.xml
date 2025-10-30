@@ -1,3 +1,48 @@
 <odoo>
+    <!-- Action pour ouvrir la vue des formations -->
+    <record id="action_training_course" model="ir.actions.act_window">
+        <field name="name">Formations</field>
+        <field name="res_model">training.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
+    <!-- Menu principal -->
+    <menuitem id="menu_training_root" name="Formations" sequence="10"/>
+
+    <!-- Sous-menu : Liste des formations -->
+    <menuitem id="menu_training_courses"
+              name="Cours"
+              parent="menu_training_root"
+              action="action_training_course"/>
+
+    <!-- Vue liste -->
+    <record id="view_training_course_tree" model="ir.ui.view">
+        <field name="name">training.course.tree</field>
+        <field name="model">training.course</field>
+        <field name="arch" type="xml">
+            <tree string="Formations">
+                <field name="name"/>
+                <field name="duration"/>
+                <field name="level"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vue formulaire -->
+    <record id="view_training_course_form" model="ir.ui.view">
+        <field name="name">training.course.form</field>
+        <field name="model">training.course</field>
+        <field name="arch" type="xml">
+            <form string="Formation">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="duration"/>
+                        <field name="level"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 </odoo>
