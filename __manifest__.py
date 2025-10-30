@@ -1,20 +1,22 @@
 {
     'name': "training_management",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Module de gestion de cours, formationnet e sessions",
 
     'description': """
-Long description of module's purpose
+Ceci est un module odoo dédié à la gestion des formation et des cours au sein d'une entreprise, il permet l'intégration facile
+et l'acquisition rapide des connaissances au sein d'une entreprise.
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Henoc N'GASAMA",
+    'website': "https://www.infinityfree-henoc.free/sites/trainning-management/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Apprentissage',
     'version': '0.1',
+    "application": True,
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
