@@ -9,4 +9,4 @@ class TrainingSession(models.Model):
     end_date = fields.Date(string='Date de fin', required=True)
     seats = fields.Integer(string='Nombre de palces limite', required=True)
     course_id = fields.Many2one('training.course', string='Les cours de la session', required=True, ondelete='cascade')
-    participant_ids = fields.One2many('training.participants', 'session_id', string='Participants')
+    participant_ids = fields.One2many('training.participant', 'session_id', string='Participants')

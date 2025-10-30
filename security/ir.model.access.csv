@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_training_management_training_management,training_management.training_management,model_training_management_training_management,base.group_user,1,1,1,1
+access_training_course,access_training_course,model_training_course,,1,1,1,1
+access_training_session,access_training_session,model_training_session,,1,1,1,1
+access_training_participant,access_training_participant,model_training_participant,,1,1,1,1

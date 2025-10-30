@@ -1,0 +1,47 @@
+<odoo>
+    <!-- Action pour ouvrir la vue des participants -->
+    <record id="action_training_participant" model="ir.actions.act_window">
+        <field name="name">Participants</field>
+        <field name="res_model">training.participant</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Sous-menu pour les participants -->
+    <menuitem id="menu_training_participants"
+              name="Participants"
+              parent="menu_training_root"
+              action="action_training_participant"
+              sequence="30"/>
+
+    <!-- Vue liste -->
+    <record id="view_training_participant_tree" model="ir.ui.view">
+        <field name="name">training.participant.tree</field>
+        <field name="model">training.participant</field>
+        <field name="arch" type="xml">
+            <tree string="Participants">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="session_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Vue formulaire -->
+    <record id="view_training_participant_form" model="ir.ui.view">
+        <field name="name">training.participant.form</field>
+        <field name="model">training.participant</field>
+        <field name="arch" type="xml">
+            <form string="Participant">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="session_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
