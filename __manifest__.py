@@ -17,6 +17,9 @@ et l'acquisition rapide des connaissances au sein d'une entreprise.
     'category': 'Apprentissage',
     'version': '0.1',
     "application": True,
+    'installable': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
