@@ -29,6 +29,7 @@ et l'acquisition rapide des connaissances au sein d'une entreprise.
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'training_course_views.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
