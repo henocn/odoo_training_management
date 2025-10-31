@@ -1,5 +1,6 @@
 <odoo>
-    <!-- Action pour ouvrir la vue des sessions -->
+    <data>
+        <!-- Action pour ouvrir la vue des sessions -->
     <record id="action_training_session" model="ir.actions.act_window">
         <field name="name">Sessions</field>
         <field name="res_model">training.session</field>
@@ -14,8 +15,8 @@
               sequence="20"/>
 
     <!-- Vue liste -->
-    <record id="view_training_session_tree" model="ir.ui.view">
-        <field name="name">training.session.tree</field>
+    <record id="view_training_session_list" model="ir.ui.view">
+        <field name="name">training.session.list</field>
         <field name="model">training.session</field>
         <field name="arch" type="xml">
             <tree string="Sessions de formation">
@@ -47,5 +48,6 @@
                 </sheet>
             </form>
         </field>
-    </record>
+        </record>
+    </data>
 </odoo>

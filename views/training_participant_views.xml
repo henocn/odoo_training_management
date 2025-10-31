@@ -1,5 +1,6 @@
 <odoo>
-    <!-- Action pour ouvrir la vue des participants -->
+    <data>
+        <!-- Action pour ouvrir la vue des participants -->
     <record id="action_training_participant" model="ir.actions.act_window">
         <field name="name">Participants</field>
         <field name="res_model">training.participant</field>
@@ -14,8 +15,8 @@
               sequence="30"/>
 
     <!-- Vue liste -->
-    <record id="view_training_participant_tree" model="ir.ui.view">
-        <field name="name">training.participant.tree</field>
+    <!-- <record id="view_training_participant_list" model="ir.ui.view">
+        <field name="name">training.participant.list</field>
         <field name="model">training.participant</field>
         <field name="arch" type="xml">
             <tree string="Participants">
@@ -25,7 +26,7 @@
                 <field name="session_id"/>
             </tree>
         </field>
-    </record>
+    </record> -->
 
     <!-- Vue formulaire -->
     <record id="view_training_participant_form" model="ir.ui.view">
@@ -37,11 +38,12 @@
                     <group>
                         <field name="name"/>
                         <field name="email"/>
-                        <field name="phone"/>
+                        <field name="contact"/>
                         <field name="session_id"/>
                     </group>
                 </sheet>
             </form>
         </field>
-    </record>
+        </record>
+    </data>
 </odoo>

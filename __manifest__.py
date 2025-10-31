@@ -18,17 +18,15 @@ et l'acquisition rapide des connaissances au sein d'une entreprise.
     'version': '0.1',
     "application": True,
     'installable': True,
-    'auto_install': False,
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'web'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
         'views/training_course_views.xml',
         'views/training_session_views.xml',
         'views/training_participant_views.xml'
