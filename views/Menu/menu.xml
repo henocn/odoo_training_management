@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <menuitem id="menu_training_root" name="Formations" sequence="10" />
+        <menuitem id="menu_training_courses"
+            name="Cours"
+            parent="menu_training_root"
+            action="action_training_course" />
+
+        <menuitem id="menu_training_participants"
+            name="Participants"
+            parent="menu_training_root"
+            action="action_training_participant"
+            sequence="30" />
+
+        <menuitem id="menu_training_sessions"
+            name="Sessions"
+            parent="menu_training_root"
+            action="action_training_session"
+            sequence="20" />
+    </data>
+</odoo> 

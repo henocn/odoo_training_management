@@ -1,31 +1,17 @@
 <odoo>
     <data>
-        <!-- Action pour ouvrir la vue des sessions -->
-    <record id="action_training_session" model="ir.actions.act_window">
-        <field name="name">Sessions</field>
-        <field name="res_model">training.session</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <!-- Sous-menu pour les sessions -->
-    <menuitem id="menu_training_sessions"
-              name="Sessions"
-              parent="menu_training_root"
-              action="action_training_session"
-              sequence="20"/>
-
     <!-- Vue liste -->
     <record id="view_training_session_list" model="ir.ui.view">
         <field name="name">training.session.list</field>
         <field name="model">training.session</field>
         <field name="arch" type="xml">
-            <tree string="Sessions de formation">
+            <list string="Sessions de formation">
                 <field name="name"/>
                 <field name="course_id"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
                 <field name="seats"/>
-            </tree>
+            </list>
         </field>
     </record>
 

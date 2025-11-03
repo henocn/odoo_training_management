@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="action_training_course" model="ir.actions.act_window">
+            <field name="name">Formations</field>
+            <field name="res_model">training.course</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record id="action_training_participant" model="ir.actions.act_window">
+            <field name="name">Participants</field>
+            <field name="res_model">training.participant</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <record id="action_training_session" model="ir.actions.act_window">
+            <field name="name">Sessions</field>
+            <field name="res_model">training.session</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+    </data>
+</odoo>

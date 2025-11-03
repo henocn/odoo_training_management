@@ -8,13 +8,13 @@ Ceci est un module odoo dédié à la gestion des formation et des cours au sein
 et l'acquisition rapide des connaissances au sein d'une entreprise.
     """,
 
-    'author': "Henoc N'GASAMA",
+    'author': "N'GASAMA Henoc",
     'website': "https://www.infinityfree-henoc.free/sites/trainning-management/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Apprentissage',
+    'category': "N'GASAMA Henoc",
     'version': '0.1',
     "application": True,
     'installable': True,
@@ -25,8 +25,10 @@ et l'acquisition rapide des connaissances au sein d'une entreprise.
 
     # always loaded
     'data': [
+        "views/menu/menu-actions.xml",
+        "views/menu/menu.xml",
+        
         'security/ir.model.access.csv',
-        'views/views.xml',
         'views/training_course_views.xml',
         'views/training_session_views.xml',
         'views/training_participant_views.xml'
